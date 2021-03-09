@@ -1,11 +1,15 @@
-const firstValue = prompt("What's the value ?");
+const firstValue = parseInt(prompt("What's the value ?"));
 
 const operator = prompt("What's the operator ?");
 
-const secondValue = prompt("What's the second value ?");
+const secondValue = parseInt(prompt("What's the second value ?"));
 
 if (operator === '+') {
-    console.log(parseInt(firstValue) + parseInt(secondValue));
- } else {
-        console.log(parseInt(firstValue) - parseInt(secondValue));
-    }
+       console.log(firstValue + secondValue);
+  } else if (operator === '-') {
+       console.log(firstValue - secondValue);
+  } else if (operator === '*') {
+       console.log(firstValue * secondValue);
+  } else if (operator === '/') {
+       console.log(firstValue / secondValue);
+  }
